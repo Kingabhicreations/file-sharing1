@@ -1,0 +1,38 @@
+:root{
+  --bg:linear-gradient(135deg,#667eea,#764ba2);
+  --card:rgba(255,255,255,0.15);
+  --text:#fff;
+  --accent:#00e6a8;
+}
+body.light{
+  --bg:linear-gradient(135deg,#f6f9ff,#e9ecf5);
+  --card:#fff;
+  --text:#000;
+}
+*{box-sizing:border-box;font-family:Segoe UI,sans-serif;}
+body{
+  margin:0;min-height:100vh;
+  background:var(--bg);color:var(--text);
+  display:flex;justify-content:center;align-items:center;
+}
+#themeToggle{
+  position:fixed;top:15px;right:15px;
+  background:var(--accent);border:none;
+  padding:10px;border-radius:50%;cursor:pointer;
+}
+.container{width:100%;padding:20px;}
+.card{
+  max-width:420px;margin:auto;background:var(--card);
+  padding:30px;border-radius:16px;text-align:center;
+  box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+.drop-area{
+  border:2px dashed rgba(255,255,255,.6);
+  border-radius:14px;padding:25px;margin:20px 0;
+  cursor:pointer;
+}
+input,button{
+  width:100%;padding:12px;margin-top:10px;border-radius:10px;border:none;
+}
+button{background:var(--accent);font-weight:bold;cursor:pointer;}
+progress{width:100%;margin-top:15px;}
